@@ -10,6 +10,8 @@ Como usar:
 
 `yarn install`
 
-`yarn run dev`
+`yarn dev => para desenvolvimento`
+
+`yarn build => para produção`
 
 `acessar http://localhost:8080`
