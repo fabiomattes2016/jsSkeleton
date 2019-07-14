@@ -1,6 +1,6 @@
 # jsSkeleton
 
-Padrão de projeto para javascritp e ES6
+Padrão de projeto para javascript e ES6
 
 Como usar:
 
