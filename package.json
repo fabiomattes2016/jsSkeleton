@@ -17,5 +17,11 @@
   "scripts": {
     "dev": "webpack-dev-server --mode=development",
     "build": "webpack --mode=production"
+  },
+  "dependencies": {
+    "crossroads": "^0.12.2",
+    "handlebars": "^4.7.6",
+    "hasher": "^1.2.0",
+    "jquery": "^3.5.1"
   }
 }
