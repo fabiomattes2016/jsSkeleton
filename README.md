@@ -14,4 +14,6 @@ Como usar:
 
 `yarn build => para produção`
 
-`acessar http://localhost:8080`
+`acessar http://localhost:8080/#/`
+
+`Testar a rota -> http://localhost:8080/#/nova`
