@@ -22,6 +22,6 @@
     "crossroads": "^0.12.2",
     "handlebars": "^4.7.7",
     "hasher": "^1.2.0",
-    "jquery": "^3.5.1"
+    "jquery": "^3.6.0"
   }
 }
