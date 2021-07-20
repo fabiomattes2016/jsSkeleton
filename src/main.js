@@ -22,14 +22,13 @@ let nova = `
 let ping = `
   <div id='ping'>Loading...</div>
   <script type='text/x-handlebars-template' id='ping-template'>
-    {{#each people}}
     <div>
-      <strong>Nome: </strong> {{nome}}<br>
-      <strong>Email: </strong> {{email}}<br>
-      <strong>Cidade: </strong> {{endereco.cidade}}<br>
+      <strong>ID: </strong> {{people.id}}<br>
+      <strong>Nome: </strong> {{people.name}}<br>
+      <strong>Email: </strong> {{people.email}}<br>
+      <strong>Cidade: </strong> {{people.address.city}}<br>
     </div>
     <br>
-    {{/each}}
   </script>
 `
 
@@ -43,14 +42,14 @@ crossroads.addRoute('nova', () => {
 
 crossroads.addRoute('ping', () => {
   jQuery.ajax({
-    url: `http://localhost/backend/echo.php?t=${new Date().getTime()}`,
+    url: `https://jsonplaceholder.typicode.com/users/1`,
   }).done(function (pong) {
     render(ping)
-    // console.log(JSON.parse(pong))
+    console.log(pong)
 
     const templateString = jQuery("#ping-template").html()
-    const personTemplate = Handlebars.compile(templateString)
-    const html = personTemplate({ people: JSON.parse(pong) })
+    const userTemplate = Handlebars.compile(templateString)
+    const html = userTemplate({ people: pong })
 
     jQuery("#ping").html(html)
 
