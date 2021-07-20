@@ -16,4 +16,6 @@ Como usar:
 
 `acessar http://localhost:8080/#/`
 
-`Testar a rota -> http://localhost:8080/#/nova`
+`Rota Nova -> http://localhost:8080/#/nova`
+
+`Rota Ping -> http://localhost:8080/#/ping`
